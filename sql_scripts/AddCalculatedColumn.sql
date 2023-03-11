@@ -1,0 +1,2 @@
+-- TODO: add EmpCount to the Department table, calculating the number of employees in each department
+-- TODO: change the body of the stored procedures affected by this change
