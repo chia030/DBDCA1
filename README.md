@@ -1,7 +1,7 @@
 # DBD Compulsory Assignment #1
 
 ## Practical Info
-The /master branch contains the solutions to the exercises 1, 2 and 3.
+The master branch contains the solutions to the exercises 1, 2 and 3.
 The initial stored procedures are defined in [CreateStoredProcedures.sql](./sql_scripts/CreateStoredProcedures.sql) and the application is in [Main.java](./src/Main.java).
 To complete exercise 3, I added another script ([AddCalculatedColumn.sql](./sql_scripts/AddCalculatedColumn.sql)) which creates the EmpCount column in Departments and changes the stored procedures accordingly.
 
