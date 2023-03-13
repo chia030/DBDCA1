@@ -2,7 +2,7 @@
 
 ## Practical Info
 The /master branch contains the solutions to the exercises 1, 2 and 3.
-The initial stored procedures are defined in ./sql_scripts/CreateStoredProcedures.sql and the application is in ./src/Main.java.
+The initial stored procedures are defined in ./sql_scripts/CreateStoredProcedures.sql and the application is in [a relative link](./src/Main.java).
 To complete exercise 3, I added another script (./sql_scripts/AddCalculatedColumn.sql) which creates the EmpCount column in Departments and changes the stored procedures accordingly.
 
 ``` java
