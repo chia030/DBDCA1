@@ -1,37 +1,13 @@
 USE [Company]
 GO
 
--- Remove foreign key constraints
-ALTER TABLE [dbo].Department DROP CONSTRAINT FK_Department_Employee
-ALTER TABLE [dbo].Dept_Locations DROP CONSTRAINT FK_Dept_Locations_Department
-ALTER TABLE [dbo].Project DROP CONSTRAINT FK_Project_Department
-ALTER TABLE [dbo].Employee DROP CONSTRAINT FK_Employee_Department
-GO
-
--- Drop Department table
-DROP TABLE [dbo].Department
-GO
-
--- Create new Department table with EmpCount column
-CREATE TABLE [dbo].Department(
-    DName VARCHAR(50) UNIQUE NOT NULL,
-    DNumber INT NOT NULL PRIMARY KEY,
-    MgrSSN NUMERIC(9) NOT NULL,
-    MgrStartDate DATETIME NOT NULL,
-    EmpCount INT NOT NULL,
-    CONSTRAINT FK_Department_Employee
-        FOREIGN KEY(MgrSSN) REFERENCES [dbo].Employee (SSN),
-)
-GO
-
--- Populate Department table again
-INSERT [dbo].Department (DName, DNumber, MgrSSN, MgrStartDate, EmpCount) VALUES (N'Headquarters', 1, CAST(888665555 AS Numeric(9, 0)), CAST(N'1971-06-19 00:00:00.000' AS DateTime), 0)
-INSERT [dbo].Department (DName, DNumber, MgrSSN, MgrStartDate, EmpCount) VALUES (N'Administration', 4, CAST(123456789 AS Numeric(9, 0)), CAST(N'1986-01-01 00:00:00.000' AS DateTime), 0)
-INSERT [dbo].Department (DName, DNumber, MgrSSN, MgrStartDate, EmpCount) VALUES (N'Research', 5, CAST(987654321 AS Numeric(9, 0)), CAST(N'1978-05-22 00:00:00.000' AS DateTime), 0)
+-- Add NULL Attribute EmpCount
+ALTER TABLE [dbo].Department
+    ADD EmpCount INT NULL;
 GO
 
 -- Add EmpCount values
-UPDATE Department
+UPDATE [dbo].Department
 SET EmpCount = (
     SELECT COUNT(*)
     FROM Employee
@@ -39,10 +15,11 @@ SET EmpCount = (
 )
 GO
 
-ALTER TABLE [dbo].Dept_Locations ADD CONSTRAINT FK_Dept_Locations_Department FOREIGN KEY (DNUmber) REFERENCES [dbo].Department (DNumber)
-ALTER TABLE [dbo].Project ADD CONSTRAINT FK_Project_Department FOREIGN KEY (DNum) REFERENCES [dbo].Department (DNumber)
-ALTER TABLE [dbo].Employee ADD CONSTRAINT FK_Employee_Department FOREIGN KEY (Dno) REFERENCES [dbo].Department (DNumber)
+-- Make it NOT NULL
+ALTER TABLE [dbo].Department
+    ALTER COLUMN EmpCount INT NOT NULL;
 GO
+
 
 -- New stored procedure to fetch EmpCount
 IF OBJECT_ID('usp_FetchEmpCount', 'P') IS NOT NULL
