@@ -7,10 +7,10 @@ To complete exercise 3, I added another script (./sql_scripts/AddCalculatedColum
 
 ``` java
 public static void main(String[] args) {
-        scanner = new Scanner(System.in);
-        String dbURL = "jdbc:sqlserver://CHIASEED-LAPTOP;databaseName=Company;encrypt=true;trustServerCertificate=true;";
-        try {
-            conn = DriverManager.getConnection(dbURL, "test", "test");
+        // ...
+        String dbURL = "jdbc:sqlserver://[serverName];databaseName=Company;encrypt=true;trustServerCertificate=true;";
+        // ...
+            conn = DriverManager.getConnection(dbURL, "[username]", "[password]");
 ```
 You will need to change the connection to be able to run the app.
 
