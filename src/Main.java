@@ -71,9 +71,9 @@ public class Main {
             CallableStatement stmt = conn.prepareCall("{CALL usp_CreateDepartment(?, ?)}");
             stmt.setString(1, dName);
             stmt.setInt(2, mgrSSN);
-//            stmt.registerOutParameter(3, Types.INTEGER);
 
             ResultSet rs = stmt.executeQuery();
+
             while (rs.next()) {
                 System.out.println("Department added! :) The department number is " + rs.getInt("DNumber"));
             }
