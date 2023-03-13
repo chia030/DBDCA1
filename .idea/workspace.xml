@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="290a3469-f89d-4857-970c-2fb4bd231e89" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqlDataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DBDCA1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql_scripts/AddCalculatedColumn.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql_scripts/CreateCompanyDB.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql_scripts/CreateStoredProcedures.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DBDCA1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DBDCA1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql_scripts/CreateStoredProcedures.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql_scripts/CreateStoredProcedures.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +19,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="cf3cfdda-7626-4dc2-a09b-a9a1b1d92b0b" />
+        <option name="url" value="https://github.com/chia030/DBDCA1.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/sql_scripts/CreateStoredProcedures.sql" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2MsCOjdQeOfzEtxrjERM41x3bmh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -42,17 +53,20 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Chiara/IdeaProjects/DBDCA1/sql_scripts/CreateCompanyDB.sql",
+    "last_opened_file_path": "C:/Users/Chiara/AppData/Roaming/JetBrains/IntelliJIdea2022.3/jdbc-drivers/SQL Server/11.2.1/sqlserver-win-auth.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
-      "sqlserver",
-      "sqlserver.localdb"
+      "sqlserver.localdb",
+      "sqlserver"
     ],
     "RunConfigurationTargetLRU": [
       "19c22b90-e041-4889-ade0-b9a2640b1819"
@@ -67,15 +81,23 @@
       <recent name="C:\Users\Chiara\IdeaProjects\DBDCA1\sql_scripts" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="DBDCA1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CreateCompanyDB.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
-      <script-file value="$PROJECT_DIR$/sql_scripts/CreateCompanyDB.sql" />
+      <script-file value="$PROJECT_DIR$/sql_scripts/CreateStoredProcedures.sql" />
       <script-mode>FILE</script-mode>
       <data-source id="19c22b90-e041-4889-ade0-b9a2640b1819" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Database Script.CreateCompanyDB.sql" />
       </list>
     </recent_temporary>
@@ -88,8 +110,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678546877704</updated>
-      <workItem from="1678546877766" duration="2480000" />
+      <workItem from="1678546877766" duration="2773000" />
+      <workItem from="1678631974263" duration="14257000" />
+      <workItem from="1678651329967" duration="3281000" />
+      <workItem from="1678721189348" duration="5311000" />
+      <workItem from="1678729157629" duration="3054000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit.">
+      <created>1678549490867</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678549490867</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,5 +139,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit." />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit." />
   </component>
 </project>
