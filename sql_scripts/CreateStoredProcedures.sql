@@ -1,6 +1,3 @@
-USE [master]
-GO
-
 USE [Company]
 GO
 
